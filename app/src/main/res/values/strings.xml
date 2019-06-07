@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DemoIntent</string>
+    <string name="acerca_de" />
+    <string name="salir" />
+    <string name="title_activity_desarrollador">DesarrolladorActivity</string>
+    <string name="title_activity_desarrollador1">Desarrollador1Activity</string>
+</resources>
