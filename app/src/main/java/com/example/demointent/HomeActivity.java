@@ -100,6 +100,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void levantarAcercade(){
+
         Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.cdtoay.com.ar/"));
         startActivity(i);
 
