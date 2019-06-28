@@ -32,11 +32,12 @@ public class DesarrolladorActivity extends AppCompatActivity {
         });
     }
     public void lanzarTelefono(){
-        String tel=buttonLlamar.getText().toString();
+        //String tel=buttonLlamar.getText().toString();
+        String tel="+5492954526743";
         //Intent i = new Intent(Intent.ACTION_DIAL, Uri.parse("tel://"+tel));
         //startActivity(i);
 
-        Intent callIntent = new Intent( Intent.ACTION_CALL );
+        Intent callIntent = new Intent( Intent.ACTION_DIAL );
         callIntent.setData( Uri.parse( "tel:" + tel ) );
         startActivity( callIntent );
     }

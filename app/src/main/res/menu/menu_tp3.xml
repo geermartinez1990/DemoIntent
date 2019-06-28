@@ -4,7 +4,7 @@
     <item
         android:id="@+id/acercade_menu"
         android:icon="@drawable/ic_face_black_24dp"
-        android:title="Acerca de " />
+        android:title="Concejo Deliberante" />
     <item
         android:id="@+id/salir_menu"
         android:icon="@drawable/ic_exit_to_app_black_24dp"

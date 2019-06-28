@@ -56,7 +56,8 @@ public class HomeActivity extends AppCompatActivity {
 
     private void cargarComponentes(){
         editTextUrl= findViewById(R.id.editTextUrl);
-        editTextNum=findViewById(R.id.editTextNum);
+       // editTextNum=findViewById(R.id.editTextNum);
+
         buttonNavegar=findViewById(R.id.buttonNavegar);
         buttonSms=findViewById(R.id.buttonSms);
         buttonLlamar=findViewById(R.id.buttonLlamar);
@@ -77,11 +78,11 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void lanzarTelefono(){
-        String tel=editTextNum.getText().toString();
+        //String tel=editTextNum.getText().toString();
         //Intent i = new Intent(Intent.ACTION_DIAL, Uri.parse("tel://"+tel));
         //startActivity(i);
-
-        Intent callIntent = new Intent( Intent.ACTION_CALL );
+        String tel= "381991";
+        Intent callIntent = new Intent( Intent.ACTION_DIAL);
         callIntent.setData( Uri.parse( "tel:" + tel ) );
         startActivity( callIntent );
     }
@@ -90,9 +91,11 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(i);
     }
     public void lanzarSms(View v){
-        String tel= editTextNum.getText().toString();
-        Intent i=new Intent(Intent.ACTION_VIEW, Uri.parse("295415526743"));
-        i.putExtra("SMS_BODY", editTextUrl.getText().toString());
+        //String tel= editTextNum.getText().toString();
+        String tel="2954526743";
+        Intent i=new Intent(Intent.ACTION_DIAL, Uri.parse("2954526743"));
+        //i.putExtra("SMS_BODY", editTextUrl.getText().toString());
+        i.putExtra("SMS_BODY", "tel"+tel);
         startActivity(i);
     }
 
@@ -106,6 +109,6 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent (HomeActivity.this, DesarrolladorActivity.class);
 
         startActivity(intent);
-        finish();
+        //finish();
     }
 }
